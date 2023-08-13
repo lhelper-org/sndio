@@ -1,0 +1,5 @@
+option('alsa',  type: 'boolean', value: true,  description: 'Enable ALSA audio & midi backends')
+option('rmidi', type: 'boolean', value: false, description: 'Enable character device midi backend')
+option('umidi', type: 'boolean', value: false, description: 'Enable USB-midi backend')
+option('sndiod', type: 'boolean', value: false, description: 'Build sndiod daemon')
+option('precision', type : 'combo', choices : ['16', '24'], description : 'sndiod device bit-depth', value : '16')
